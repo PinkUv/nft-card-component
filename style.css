@@ -42,16 +42,21 @@ body {
 
 .primaryImg {
   border-radius: .8rem;
-  margin-bottom: 1rem;
   position: relative;
+}
+
+.mainImage {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .mainImage div {
   position: absolute;
   background-color: hsl(178, 100%, 50%, 60%);
-  width: 11.9%;
-  top: 28%;
-  height: 23.5%;
+  width: 100%;
+  top: 0;
+  height: 100%;
   z-index: 999;
   border-radius: .8rem;
   opacity: 0;
@@ -72,6 +77,7 @@ body {
 
 .container h1 {
   font-size: 23px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   transition: color 0.2s ease-in-out;
 }
@@ -95,6 +101,10 @@ ul {
   margin-bottom: 1rem;
 }
 
+ul li {
+  display: flex;
+}
+
 ul li:first-child {
   float: left;
   color: var(--cyan);
@@ -103,7 +113,7 @@ ul li:first-child {
 
 ul li:first-child::before {
   content: url(./images/icon-ethereum.svg);
-  display: inline-flex;
+  display: flex;
   margin-right: 5px;
 }
 
